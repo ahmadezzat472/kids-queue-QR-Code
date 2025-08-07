@@ -93,20 +93,4 @@
     @apply bg-background text-foreground;
   }
 }
-/* For Chrome, Edge, and Safari */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 2px;
-  /* background: #22223B;  */
-}
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #4a4e69; /* thumb color */
-  border-radius: 4px;
-}
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #9a8c98; /* thumb hover color */
-}
-/* For Firefox */
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #4a4e69 #22223b;
-}
+

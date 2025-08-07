@@ -617,11 +617,11 @@ export default function Index() {
                     <div className="flex gap-2">
                       <Button size="sm" variant="outline" className="flex-1">
                         <Eye className="w-4 h-4 mr-2" />
-                        View
+                        {/* View */}
                       </Button>
                       <Button size="sm" variant="outline" className="flex-1">
                         <Download className="w-4 h-4 mr-2" />
-                        Download
+                        {/* Download */}
                       </Button>
                       <Button size="sm" variant="outline">
                         <SquarePen className="w-4 h-4" />
