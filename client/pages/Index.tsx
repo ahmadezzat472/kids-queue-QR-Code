@@ -553,7 +553,7 @@ export default function Index() {
                               <Download className="w-4 h-4" />
                             </Button>
                             <Button size="sm" variant="outline">
-                              <MoreHorizontal className="w-4 h-4" />
+                              <SquarePen className="w-4 h-4" />
                             </Button>
                           </div>
                         </td>
@@ -617,11 +617,11 @@ export default function Index() {
                     <div className="flex gap-2">
                       <Button size="sm" variant="outline" className="flex-1">
                         <Eye className="w-4 h-4 mr-2" />
-                        {/* View */}
+                        View
                       </Button>
                       <Button size="sm" variant="outline" className="flex-1">
                         <Download className="w-4 h-4 mr-2" />
-                        {/* Download */}
+                        Download
                       </Button>
                       <Button size="sm" variant="outline">
                         <SquarePen className="w-4 h-4" />
@@ -643,32 +643,24 @@ export default function Index() {
               <QrCode className="w-5 h-5 text-dashboard-purple" />
               QR Code Options
             </DialogTitle>
-            <Button
-              size="icon"
-              variant="ghost"
-              className="absolute right-4 top-4"
-              onClick={() => setShowQROptionsModal(false)}
-            >
-              <X className="w-4 h-4" />
-            </Button>
           </DialogHeader>
           <div className="space-y-3 py-4">
             <Button
-              className="w-full justify-start h-12 bg-dashboard-blue hover:bg-dashboard-blue/90 text-white"
+              className="w-full justify-start h-12 bg-primary hover:bg-primary/90 text-white"
               onClick={() => openQRModal("school")}
             >
               <QrCode className="w-5 h-5 mr-3" />
               Tour School QR Code
             </Button>
             <Button
-              className="w-full justify-start h-12 bg-dashboard-green hover:bg-dashboard-green/90 text-white"
+              className="w-full justify-start h-12 bg-green-500 hover:bg-green-500/90 text-white"
               onClick={() => openQRModal("enrollment")}
             >
               <Users className="w-5 h-5 mr-3" />
               Enrollment QR Code
             </Button>
             <Button
-              className="w-full justify-start h-12 bg-dashboard-purple hover:bg-dashboard-purple/90 text-white"
+              className="w-full justify-start h-12 bg-orange-500 hover:bg-orange-500/90 text-white"
               onClick={() => openQRModal("waitlist")}
             >
               <TrendingUp className="w-5 h-5 mr-3" />
@@ -683,26 +675,17 @@ export default function Index() {
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <QrCode className="w-5 h-5 text-dashboard-purple" />
+              <QrCode className="w-5 h-5 text-primary" />
               Enrollment QR Code
             </DialogTitle>
-            <Button
-              size="icon"
-              variant="ghost"
-              className="absolute right-4 top-4"
-              onClick={() => setShowQRModal(false)}
-            >
-              <X className="w-4 h-4" />
-            </Button>
           </DialogHeader>
           <div className="text-center py-6">
-            <div className="w-48 h-48 bg-gradient-to-br from-dashboard-purple/20 to-dashboard-blue/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="w-48 h-48 bg-gradient-to-br from-primary/60 to-primary/30 rounded-lg flex items-center justify-center mx-auto mb-4">
               <div className="w-32 h-32 bg-white rounded-lg shadow-sm flex items-center justify-center">
-                <QrCode className="w-20 h-20 text-dashboard-purple" />
+                <QrCode className="w-20 h-20 text-primary" />
               </div>
             </div>
             <p className="text-lg font-medium text-slate-900 mb-2">QR Code</p>
-            <p className="text-sm text-slate-600 mb-6">Scan to enroll</p>
             <p className="text-sm text-slate-500">
               Students can scan this code to quickly access the enrollment form
             </p>
