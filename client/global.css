@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   /**
    * Tailwind CSS theme
@@ -10,85 +11,108 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
+
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 217 91% 60%;
+
+    --primary: 262 83% 58%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 215 80% 95%;
-    --secondary-foreground: 217 80% 40%;
-    --muted: 215 80% 95%;
+
+    --secondary: 250 100% 97%;
+    --secondary-foreground: 262 83% 58%;
+
+    --muted: 250 100% 97%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 217 80% 90%;
-    --accent-foreground: 217 80% 40%;
+
+    --accent: 262 83% 96%;
+    --accent-foreground: 262 83% 58%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 217 80% 40%;
+    --ring: 262 83% 58%;
+
     --radius: 0.75rem;
-    --sidebar-background: 217 80% 98%;
+
+    --sidebar-background: 262 100% 99%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 217 80% 40%;
+    --sidebar-primary: 262 83% 58%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 217 80% 90%;
-    --sidebar-accent-foreground: 217 80% 40%;
-    --sidebar-border: 217 30% 92%;
-    --sidebar-ring: 217 80% 40%;
+    --sidebar-accent: 262 83% 96%;
+    --sidebar-accent-foreground: 262 83% 58%;
+    --sidebar-border: 262 30% 94%;
+    --sidebar-ring: 262 83% 58%;
+
     /* Dashboard specific colors */
-    --dashboard-bg: 217 80% 98%;
+    --dashboard-bg: 248 100% 99%;
     --stat-card-bg: 0 0% 100%;
     --stat-purple: 262 83% 58%;
     --stat-green: 142 76% 36%;
-    --stat-blue: 217 91% 60%;
+    --stat-blue: 213 94% 68%;
     --stat-orange: 25 95% 53%;
     --warning-bg: 48 100% 96%;
     --warning-border: 45 93% 47%;
   }
+
   .dark {
-    --background: 217 47% 11%;
+    --background: 262 47% 11%;
     --foreground: 210 40% 98%;
-    --card: 217 47% 11%;
+
+    --card: 262 47% 11%;
     --card-foreground: 210 40% 98%;
-    --popover: 217 47% 11%;
+
+    --popover: 262 47% 11%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 217 47% 11%;
-    --secondary: 215 40% 18%;
+
+    --primary: 262 83% 68%;
+    --primary-foreground: 262 47% 11%;
+
+    --secondary: 262 30% 18%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 215 40% 18%;
+
+    --muted: 262 30% 18%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 215 40% 18%;
+
+    --accent: 262 30% 18%;
     --accent-foreground: 210 40% 98%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 215 40% 18%;
-    --input: 215 40% 18%;
-    --ring: 217 91% 60%;
-    --sidebar-background: 217 55% 8%;
+
+    --border: 262 30% 18%;
+    --input: 262 30% 18%;
+    --ring: 262 83% 68%;
+    --sidebar-background: 262 55% 8%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 262 83% 68%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 40% 15%;
+    --sidebar-accent: 262 40% 15%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 215 40% 15%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-border: 262 40% 15%;
+    --sidebar-ring: 262 83% 68%;
+
     /* Dashboard specific colors - dark mode */
-    --dashboard-bg: 217 55% 8%;
-    --stat-card-bg: 217 47% 11%;
+    --dashboard-bg: 262 55% 8%;
+    --stat-card-bg: 262 47% 11%;
     --stat-purple: 262 83% 68%;
     --stat-green: 142 70% 45%;
-    --stat-blue: 217 91% 60%;
+    --stat-blue: 213 90% 75%;
     --stat-orange: 25 90% 60%;
     --warning-bg: 48 50% 15%;
     --warning-border: 45 80% 55%;
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

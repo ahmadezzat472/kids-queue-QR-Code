@@ -33,7 +33,7 @@ import {
 import { cn } from "@/lib/utils";
 
 export default function Index() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const [showQRModal, setShowQRModal] = useState(false);
   const [showQROptionsModal, setShowQROptionsModal] = useState(false);
